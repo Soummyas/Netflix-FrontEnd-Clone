@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="styles.css"/>
+ </head>
+    <body>
+
+<!--Navigation -->
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" alt="" class="nav__logo">
+        <img src="images/netflix-avatar.png" alt="" class="nav__avatar">
+        </div>    
+
+ <!--Header Banner-->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">Money Heist</h1>
+            <div class="banner__buttons">
+                <button class="banner__button">Play</button>
+                <button class="banner__button">My List</button>   
+            </div>
+            <div class="banner__description">
+                Set in Madrid, a mysterious man known as the "Professor" recruits a group of eight people, who choose city names as their aliases, to carry out an ambitious plan that involves entering the Royal Mint of Spain, and escaping with €984 million.
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>  
+<br>
+<br>
+<br>
+    <button id="mode-toggle" onclick="toggleDarkMode()">Change mode</button> 
+<br>
+<br>
+<br>
+
+<div class="outer-wrapper">
+    <div class="inner-wrapper">
+    <!--Netflix Originals-->
+    <div class="row">
+        <h2>Netflix Originals</h2>
+        <div class="row__posters">
+            <img src="images/large-movie1.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie2.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie3.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie4.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie5.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie6.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie7.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie8.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie1.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie2.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie3.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie4.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie5.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie6.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie7.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="images/large-movie8.jpg" alt="" class="row__poster row__posterLarge">
+        </div>
+    </div>
+</div>
+</div>
+<br>
+    <!--Trending Now-->
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+    <div class="row">
+        <h2>Trending Now</h2>
+        <div class="row__posters">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/dueiWzWc81UAgnbDAyH4Gjqnh4n.jpg" alt="" class="row__poster">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jp" alt="" class="row__poster">
+            <img src="images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="" class="row__poster">
+            <img src="images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <!-- Top Rated -->
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+    <div class="row">
+        <h2>Top Rated</h2>
+        <div class="row__posters">
+          
+            <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jp" alt="" class="row__poster">
+            <img src="images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="" class="row__poster">
+            <img src="images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">  
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/dueiWzWc81UAgnbDAyH4Gjqnh4n.jpg" alt="" class="row__poster">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <!-- Action movies -->
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+    <div class="row">
+        <h2>Action Movies</h2>
+        <div class="row__posters">
+            <img src="https://image.tmdb.org/t/p/w500/hMh1mR2kNl8kHjpIuPh4TICTwjo.jpg" alt="" class="row__poster">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="" class="row__poster">
+            <img src="images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jp" alt="" class="row__poster">
+            <img src="images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="" class="row__poster">
+            <img src="images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">  
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <br>
+     <!-- Comedy movies -->
+     <div class="outer-wrapper">
+        <div class="inner-wrapper">
+     <div class="row">
+        <h2>Comedy Movies</h2>
+        <div class="row__posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">  
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="" class="row__poster">
+        </div>
+        </div>
+        </div>
+    </div>
+    <br>
+     <!-- Horror movies -->
+     <div class="outer-wrapper">
+        <div class="inner-wrapper">
+     <div class="row">
+        <h2>Horror Movies</h2>
+        <div class="row__posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">  
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/dueiWzWc81UAgnbDAyH4Gjqnh4n.jpg" alt="" class="row__poster">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <!--Romance movies -->
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+    <div class="row">
+        <h2>Romance Movies</h2>
+        <div class="row__posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">  
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="" class="row__poster">
+            <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="" class="row__poster">  
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <!--Documentries -->
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+    <div class="row">
+        <h2>Documentries </h2>
+        <div class="row__posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="images/small-movie8.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+</div>
+    </div>
+
+    <br>
+        <!-- Mode toggle button add this to navigation bar -->
+        <script>
+
+          // JavaScript function to toggle dark mode
+            function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const bannerFadeBottom = document.querySelector(".banner--fadeBottom");
+        bannerFadeBottom.classList.toggle("banner--fadeBottomAlternate");
+    }
+
+    const nav=document.getElementById('nav');
+    window.addEventListener('scroll', () =>{
+            if(window.scrollY>=100){
+                nav.classList.add('nav__black');
+            }
+            else{
+                nav.classList.remove('nav__black');
+            }
+    })
+   
+   
+        </script>
+    </body>
+</html>
